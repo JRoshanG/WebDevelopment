@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="my basic portfolio">
+    <meta name="keywords" content="Individual Portfolio Website">
+    <meta name="autor" content="Roshan Gautam">
+    <title>Roshan Gautam</title>
+    
+    <!--        Linking Font Awesome Icons      -->
+    <link rel="stylesheet" href="css/all.css">
+    <!--        Linking Custom Style        -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--        Linking External JavaScript -->
+    <script src="js/script.js"></script>
+    <!-- ----- Internal CSS ----- -->
+    <style>
+            
+        /* ---- Starting of Home Landing Page ----- */
+        .landing-content{
+                display: flex;
+                justify-content: center;
+                height: 550px;
+                overflow: hidden;
+                background-size: cover;
+                margin-bottom: 5rem;
+        }
+
+        .landing-intro{
+                text-align: center;
+                margin-top: 10rem;
+                margin-left: 5rem;
+                cursor: default;
+        }
+
+        .landing-page .intro-btn{
+                padding: 0.6rem 2rem;
+                border-radius: 1rem;
+                font-weight: bold;
+                font-size: 1.2rem;
+        }
+
+        .landing-page .intro-btn:hover{
+                background-color: #000;
+                color: #fff;
+                border: 2px solid #fff;
+                cursor: pointer;
+        }
+            
+        /* ---- Starting of Home Landing Page ----- */
+
+            
+        /* ----- Starting of About Me Page----- */
+         .about-me-page .about-me-content {
+                display: flex;
+                flex-direction: right;
+                margin-bottom: 2.5rem;
+                cursor: default;
+        }
+
+        .about-me-page .info{
+                height: 10rem;
+                width: 11rem;
+                border: 3px solid #000;
+                text-align: center;
+                border-radius: 50%;
+                margin-left: 8rem;
+        }
+
+        .about-me-page .my-info{
+                width: 45rem;
+                height: 10rem;
+                justify-content: center;
+                margin-left: 5rem;
+                font-size: 1.4rem;
+        }
+
+        .about-me-page .info-btn{
+                width: 0rem 3rem;
+                padding: 0rem 0.6rem;
+                font-size: 1.2rem;
+                margin-top: 0.6rem;
+                cursor: pointer;
+                border-radius: 0.5rem;
+                background-color: #fff;
+        }
+
+       .about-me-page .info-btn:hover{
+                color: #000ff0;
+                background-color: #808080;
+                border: 2px solid #000;
+       }
+        /* ---X-- Closing of About Me Page--X--- */
+
+
+        /* -----Starting of Article Post----- */
+
+        .recent-article .article-content{
+                display: flex;
+                flex-direction: right;
+                justify-content: space-evenly;
+        }
+
+        .recent-article img{
+                width: 350px;
+                height: 250px;
+                background-size: cover;
+        }
+
+        .recent-article .post-article{
+                width: 350px;
+                border: 2px solid #000;
+                font-size: 1.2rem;
+        }
+
+        .recent-article .post-article figcaption{
+                display: flex;
+                flex-direction: right;
+                justify-content: space-evenly;
+                border: 2px solid #fff;
+                background-color: #000;
+                border-radius: 2rem;
+                position: relative;
+                bottom: 1rem;
+                padding: 0.4rem;
+                cursor: default;
+        }
+
+        .post-article figcaption .icon, span{
+                color: #fff;
+        }
+
+        .recent-article .post-article p{
+                text-align: center;
+                padding: 0rem 1rem;
+        }
+
+        .recent-article .post-article a:hover{
+                color: #000ff0;
+        }
+
+        /* ---X--Closing of Article Post--X--- */
+        
+    </style>
+    
+</head>
+<body>
+    
+    <!-- -------- Creating a Wrapper for Body ---------- -->
+    
+    <div class="wrapper">
+
+        <!-- ----- Creating a Navigation MenuBar ------ -->
+        
+        <nav class="navigation">
+
+            <!-- -----Creating a Navigation Name ----- -->
+            <div class="portfolio-name">
+                <a href="index.html" style="text-decoration: none;"><h1>PORTFOLIO</h1></a>
+            </div>
+            <!-- X-----Closing a Navigation Name -----X -->
+
+            <!-- ----- Creating a Navigation Menu ----- -->
+            <div class="nav-menu">
+                <div class="nav-list">
+
+                    <a href="#" class="nav-name current">Home</a>   
+                    <a href="pages/cv.html" class="nav-name">CV</a> 
+                    <a href="pages/blog.html" class="nav-name">Blog</a>   
+                    <a href="pages/research.html" class="nav-name">Research</a>   
+                    <a href="pages/contact.html" class="nav-name" style="border-right: 2px solid #000;">Contact</a></li>
+                    
+                </div>
+            </div>
+            <!-- X----- Creating a Navigation Menu -----X -->
+
+            <!-- ----- Creating a Social Icon ----- -->
+            <div class="social-icon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <!-- X----- Closing a Social Icon -----X -->
+        </nav>
+        
+        <!-- X ----- Closing of Navigation MenuBar ------X -->
+   
+        <!-- ----- Creation of Main Page ----- -->
+        
+        <main>
+            <!-- ----Creating a Container ----- -->
+            <div class="container">
+
+                <!-- -----Creating a Home Landing Page----- -->
+                <div class="landing-page">
+                    <div class="landing-content" id="landing-image">
+                        <div class="landing-intro">
+                            <h1 style="font-size: 2.6rem; margin: 1.2rem; color: #fff;">Welcome to My Portfolio <br> and Blog</h1>
+                            <h3 style="font-size: 1.8rem; margin: 1.2rem; color: #fff;">Introduction Myself,  Roshan Gautam,<br> Student of Islington College,<br> Studying Networking</h3>
+                            <button class="intro-btn" onclick="location.href = 'pages/contact.html';">Contact Me</button>
+                        </div>
+                        <figure>
+                            <img style="margin-left: 5rem;" src="images/Roshan Gautam.png" alt="Roshan Gautam">
+                        </figure>
+                    </div>
+                </div>
+                <!-- X-----Closing of Home Landing Page-----X -->
+
+                <!-- -----Creation of About Me Page----- -->
+                <div class="about-me-page">
+                    <div class="about-me-content">
+                        <div class="info">
+                            <h1 style="margin-top: 2rem;">WHO <br> AM <br> I</h1>
+                        </div>
+                        <div class="my-info">
+                            <p>My Name is Roshan Gautam, Student of Islington college. I have completed my SEE from Mount Seb School 
+                                and +2 from Campion Academy. I am familiar with some common IT Skills, Marketing Platforms and Fluent in 
+                                English with some volunteering experience in college program and cleaning campaign. </p> 
+                            <button class="info-btn" onclick="location.href = 'pages/cv.html';">View CV</button>
+                        </div>
+                    </div>
+
+                </div>
+                 <!-- X-----Closing of About Me Page-----X -->
+                <hr style="margin: 1rem 2rem;">           
+ 
+                <!-- -----Creation of Article Post----- -->
+                <div class="recent-article">
+                    <h1 style="cursor:default; text-align: center; text-decoration: underline; margin-bottom: 1rem;">Recent Article</h1>
+                    <div class="article-content">
+                        <div class="post-article">
+                            <figure>
+                                <img src="images/Article images/Article 1.jpg" alt="First Figure">
+                            </figure>
+                            <figcaption>
+                                <div>
+                                    <i class="fas fa-user icon"></i>&nbsp; <span>Roshan</span>
+                                </div>
+                                <div >
+                                    <i class="fas fa-calendar-week icon"></i> &nbsp; <span>12 March</span>
+                                </div>
+                                <div><span>13 Comments </span></div>
+                            </figcaption>
+                            <p><a href="#" style="text-decoration: none;">Technologies used to Protect Nature and Environment.</a></p>
+                        </div>
+                        <div class="post-article">
+                            <figure>
+                                <img src="images/Article images/Article 2.jpg" alt="Second Figure">
+                            </figure>
+                            <figcaption>
+                                <div>
+                                    <i class="fas fa-user icon"></i>&nbsp; <span>Roshan</span>
+                                </div>
+                                <div >
+                                    <i class="fas fa-calendar-week icon"></i> &nbsp; <span>21 May</span>
+                                </div>
+                                <div><span>5 Comments </span></div>
+                            </figcaption>
+                            <p><a href="pages/blog-pages/internet.html" style="text-decoration: none;">Basic Internet Technologies and It's Impact in our Daily Life</a></p>                        
+                        </div>
+                        <div class="post-article">
+                            <figure>
+                                <img src="images/Article images/Article 3.jpg" alt="Third Figure">
+                            </figure>
+                            <figcaption>
+                                <div>
+                                    <i class="fas fa-user icon"></i>&nbsp; <span>Roshan</span>
+                                </div>
+                                <div >
+                                    <i class="fas fa-calendar-week icon"></i> &nbsp; <span>2 May</span>
+                                </div>
+                                <div><span>7 Comments </span></div>
+                            </figcaption>
+                            <p><a href="#" style="text-decoration: none;">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Deleniti quibusdam delectus dolor!</a></p>                        
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin: 1rem 2rem;">
+                <!-- X-----Closing of Article Post-----X -->
+                
+                <!-- -----Creation of Newsletter----- -->
+                <div class="sub-newsletter">
+                    <div class="information">
+                        <h1>Subscribe our Newsletter <br> 
+                        And <br> Get Latest Update</h1>
+                    </div>
+                    <form name="subscribe"  onsubmit="validateSubscribe()">
+                        <input type="text" name="fname"  placeholder="First Name">
+                        <input type="text" name="lname"  placeholder="Last Name"><br>
+                        <input type="text" name="email"  placeholder="Email@domainname.com"> <br>
+                        <input style="cursor: pointer;" type="submit" name="Subscribe" value="Subscribe">
+                    </form>
+                </div>
+                <hr style="margin: 2rem 2rem 0.2rem 2rem;">
+                <!-- X-----Closing of Newsletter-----X -->
+                
+            </div>
+            <!-- X----Closing of Container -----X -->
+        </main>
+        
+        <!-- X----- Creation of Main Page -----X -->
+
+        <!-- -----Creation of Footer----- -->
+        
+        <footer>
+            <div class="footer-content" style="cursor: default;">
+                <span><h3 style="color: #fff;">&copy; 2021 All Rights Reserved</h3></span>
+            </div>
+        </footer>
+        
+        <!-- X-----Closing of Footer-----X -->
+    
+    </div>
+    
+    <!-- X------ Closing Wrapper for Body ----------X -->
+
+    <!--        Internal JS      -->
+    <script>
+
+        // Background Image Changer in Every 10 Sec.
+        window.onload = function () {
+            backgroundImage();
+            function backgroundImage(){
+                var images = ["images/background.jpg", "images/background-2.jpg", "images/background-3.jpg"]
+                var numberOfImage = Math.floor((Math.random()*3));
+                document.getElementById("landing-image").style.backgroundImage = "url('"+images[numberOfImage]+"')";
+
+            }
+            window.setInterval(backgroundImage, 10000);
+
+        }
+
+        
+    </script>
+</body>
+</html>

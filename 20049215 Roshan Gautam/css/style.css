@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ----- Creating a Navigation MenuBar ------ */
+.navigation{
+    display: flex;
+    flex-direction: right;
+    justify-content: space-between;
+    padding: 0.4rem 1.2rem;
+}
+
+.navigation .nav-list ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: right;
+}
+
+.navigation .nav-list .nav-name{
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-left: 2px solid #000;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: center;
+}
+
+.navigation .nav-list .nav-name:hover{
+    color: #000ff0;
+    border-right: none;
+}
+
+.navigation .portfolio-name h1:hover{
+    color: #000ff0;
+}
+
+.navigation .social-icon a{
+    padding-left: 1rem;
+    font-size: 1.6rem;
+}
+
+.navigation .social-icon i:hover{
+    color: #000ff0;
+}
+
+/* -- X ----- Closing of Navigation MenuBar ------X -- */
+/* -----Starting of Footer----- */
+
+footer .footer-content{
+    background-color: #000;
+    text-align: center;
+}
+
+/* ---X--Closing of Footer--X--- */
+
+
+/* -----Creation of Newsletter----- */
+.sub-newsletter{
+    display: flex;
+    flex-direction: right;
+
+}
+
+.sub-newsletter .information{
+    width: 50%;
+    text-align: center;
+}
+
+.sub-newsletter form input{
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    padding: 0.1rem;
+}
+/* ---X--Creation of Newsletter--X--- */

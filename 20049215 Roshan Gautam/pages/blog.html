@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog.</title>
+
+    <!--        Linking Font Awesome Icons      -->
+    <link rel="stylesheet" href="../css/all.css">
+        
+    <!--        Linking Custom Style        -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--        Linking External JS      -->
+    <script src="../js/script.js"></script>
+
+    <!--        Internal CSS        -->
+    <style>
+
+        main{
+            width: 90%;
+            margin: auto;
+        }
+
+        .blog-container{
+            display: flex;
+            flex-direction: right;
+            margin-top: 1rem;
+            background-color: #000;
+            color: #fff;
+            cursor: default;
+            height: 18rem;
+            overflow: hidden;
+        }
+
+        main img{
+            width: 350px;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        /* -----Starting of Article Post----- */
+
+        main figcaption{
+            display: flex;
+            flex-direction: right;
+            justify-content: space-evenly;
+            border: 2px solid #fff;
+            background-color: #000;
+            position: relative;
+            bottom: 1rem;
+            padding: 0.4rem;
+            cursor: default;
+        }
+
+        figcaption .icon, span{
+            color: #fff;
+        }
+
+        .blog-content{
+            margin-left: 3rem;
+            padding:  1rem 2rem;
+            font-size: 1.4rem;
+        }
+        main h2 a{
+            text-decoration: none;
+            color: #800080;
+        }
+
+        main h2 a:hover{
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        main p{
+            margin-top: 1rem;
+            color: #fff;
+        }
+
+        main figure{
+            padding: 1rem 1rem 0rem 1rem;
+        }
+
+        /* ---X--Closing of Article Post--X--- */        
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- -----Creating a Wrapper for Body----- -->
+    
+    <div class="blog-wrapper">
+
+        <!-- ----- Creating a Navigation MenuBar ------ -->
+
+        <nav class="navigation">
+
+            <!-- -----Creating a Navigation Name ----- -->
+            <div class="portfolio-name">
+                <a href="../index.html" style="text-decoration: none;"><h1>PORTFOLIO</h1></a>
+            </div>
+            <!-- X-----Closing a Navigation Name -----X -->
+
+            <!-- ----- Creating a Navigation Menu ----- -->
+            <div class="nav-menu">
+                <div class="nav-list">
+
+                    <a href="../index.html" class="nav-name current">Home</a>   
+                    <a href="cv.html" class="nav-name">CV</a> 
+                    <a href="#" class="nav-name">Blog</a>   
+                    <a href="research.html" class="nav-name">Research</a>   
+                    <a href="contact.html" class="nav-name" style="border-right: 2px solid #000;">Contact</a></li>
+                    
+                </div>
+            </div>
+            <!-- X----- Creating a Navigation Menu -----X -->
+
+            <!-- ----- Creating a Social Icon ----- -->
+            <div class="social-icon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <!-- X----- Closing a Social Icon -----X -->
+        </nav>
+        
+        <!-- X ----- Closing of Navigation MenuBar ------X -->
+        
+
+        <!-- ----- Creation of Main ----- -->
+        
+        <main>
+            <h2 style="font-size: 2.5rem;">Blog.</h2>
+            <hr style="margin-top: 1rem;">
+
+            <!-- -----Creating a Container to store First Blog----- -->
+
+            <div class="blog-container">
+                <figure><img src="../images/Article images/Article 2.jpg" alt="Article">
+                    <figcaption>
+                        <div>
+                            <i class="fas fa-user icon"></i>&nbsp; <span>Roshan</span>
+                        </div>
+                        <div >
+                            <i class="fas fa-calendar-week icon"></i> &nbsp; <span>21 May</span>
+                        </div>
+                        <div><span>5 Comments </span></div>
+                    </figcaption>
+                </figure>
+                <section class="blog-content">
+                    <h2><a href="../pages/blog-pages/internet.html"> Basic Internet Technologies and It's Impact in our Daily Life</a></h2>
+                    <p>The Internet is a connection of networks that uses the OSI Model and TCP/IP Model to transfer files or 
+                        data from one end of devices to another. There are 7 layers on OSI Model and 4 layers on TCP/IP layers 
+                        which have a similar function. The Internet has made a positive and negative impact on our life by making 
+                        our work easy to do, entertain us, and lazy too. Works that require a lot of time are made easy and 
+                        instant by using internet technology. From the purchase of goods to payment of the goods have been made online due to Internet Technologies. 
+                        Internet uses a different set of protocols to complete the given tasks such as HTTP, FTP, and telnet.</p>
+                </section>
+            </div>
+
+            <!-- X-----Closing  Container of First Blog-----X -->
+            
+            <hr style="margin-top: 1rem;">
+
+            <!-- -----Creating a Container to store Second Blog----- -->
+            
+            <div class="blog-container">
+                <figure><img src="../images/Article images/Article 1.jpg" alt="Article">
+                    <figcaption>
+                        <div>
+                            <i class="fas fa-user icon"></i>&nbsp; <span>Roshan</span>
+                        </div>
+                        <div >
+                            <i class="fas fa-calendar-week icon"></i> &nbsp; <span>12 March</span>
+                        </div>
+                        <div><span>13 Comments </span></div>
+                    </figcaption>
+                </figure>
+                <section class="blog-content">
+                    <h2><a href="#"> Technologies used to Protect Nature and Environment.</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptas dolor ut at, aliquam
+                        nihil molestias, possimus vitae ad pariatur nesciunt deserunt non sed quidem. Deleniti facilis
+                        nihil, quaerat perspiciatis labore dignissimos obcaecati eum, quia et quidem a iste! Sunt.</p>
+                </section>
+            </div>
+
+            <!-- X-----Closing a Containerof Second Blog----- -->
+
+            <hr style="margin-top: 1rem;">
+
+            <!-- -----Creating a Container to store Third Blog----- -->
+        
+            <div class="blog-container">
+                <figure><img src="../images/Article images/Article 3.jpg" alt="Article">
+                    <figcaption style="bottom: 2.3rem;">
+                        <div>
+                            <i class="fas fa-user icon"></i>&nbsp; <span>Roshan</span>
+                        </div>
+                        <div >
+                            <i class="fas fa-calendar-week icon"></i> &nbsp; <span>2 May</span>
+                        </div>
+                        <div><span>7 Comments </span></div>
+                    </figcaption>
+                </figure>
+                <section class="blog-content">
+                    <h2><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, obcaecati!</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptas dolor ut at, aliquam
+                        nihil molestias, possimus vitae ad pariatur nesciunt deserunt non sed quidem. Deleniti facilis
+                        nihil, quaerat perspiciatis labore dignissimos obcaecati eum, quia et quidem a iste! Sunt.</p>
+                </section>
+            </div>
+
+            <!-- -----Closing a Container of Third Blog----- -->
+
+            <hr style="margin-top: 1rem; margin-bottom: 1rem;">
+
+            <!-- -----Creation of Newsletter----- -->
+            
+            <div class="sub-newsletter">
+                <div class="information">
+                    <h1>Subscribe our Newsletter <br> 
+                    And <br> Get Latest Update</h1>
+                </div>
+                <form name="subscribe"  onsubmit="validateSubscribe()">
+                    <input type="text" name="fname"  placeholder="First Name">
+                    <input type="text" name="lname"  placeholder="Last Name"><br>
+                    <input type="text" name="email"  placeholder="Email@domainname.com"> <br>
+                    <input style="cursor: pointer;" type="submit" name="Subscribe" value="Subscribe">
+                </form>
+            </div>
+            <hr style="margin: 2rem 2rem 0.2rem 2rem;">
+            
+            <!-- X-----Closing of Newsletter-----X -->            
+
+        </main>
+        
+        <!-- X----- Creation of Main -----X -->
+
+        <!-- -----Creation of Footer----- -->
+
+        <footer>
+            <div class="footer-content" style="cursor: default;">
+                <span><h3 style="color: #fff;">&copy; 2021 All Rights Reserved</h3></span>
+            </div>
+        </footer>
+        
+        <!-- X-----Closing of Footer-----X -->        
+        
+    </div>
+    
+    <!-- X-----Creating a Wrapper for Body-----X -->
+
+</body>
+</html>

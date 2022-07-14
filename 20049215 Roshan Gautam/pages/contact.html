@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <!--        Linking Font Awesome Icons      -->
+    <link rel="stylesheet" href="../css/all.css">
+        
+    <!--        Linking Custom Style        -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--        Linking External JS      -->
+    <script src="../js/script.js"></script>
+
+    <!-- ----- Inline CSS ----- -->
+    <style>
+
+        .contact .contact-form{
+            margin-top: 3rem;
+        }
+        
+        .contact-info, .contact-form{
+            width: 40%;
+        }
+
+        .contact{
+            display: flex;
+            flex-direction: right;
+            justify-content: space-around;
+        }
+
+        .contact-container{
+            border: 2px solid #000;
+            text-align: center;
+        }
+
+        main h2{
+            text-decoration: underline;
+            font-size: 1.4rem; 
+            margin: 1rem 0rem;
+        }
+
+        .contact-container-input input{
+            width: 20rem;
+            padding: 0.3rem;
+            font-size: 1.2rem;
+            margin-top: 0.4rem;
+        }
+
+        main span{
+            font-size: larger;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- -----Creating a Wrapper for Body----- -->
+    
+    <div class="contact-wrapper">
+
+        <!-- ----- Creating a Navigation MenuBar ------ -->
+
+        <nav class="navigation">
+
+            <!-- -----Creating a Navigation Name ----- -->
+            <div class="portfolio-name">
+                <a href="../index.html" style="text-decoration: none;"><h1>PORTFOLIO</h1></a>
+            </div>
+            <!-- X-----Closing a Navigation Name -----X -->
+
+            <!-- ----- Creating a Navigation Menu ----- -->
+            <div class="nav-menu">
+                <div class="nav-list">
+
+                    <a href="../index.html" class="nav-name current">Home</a>   
+                    <a href="cv.html" class="nav-name">CV</a> 
+                    <a href="blog.html" class="nav-name">Blog</a>   
+                    <a href="research.html" class="nav-name">Research</a>   
+                    <a href="#" class="nav-name" style="border-right: 2px solid #000;">Contact</a></li>
+                    
+                </div>
+            </div>
+            <!-- X----- Creating a Navigation Menu -----X -->
+
+            <!-- ----- Creating a Social Icon ----- -->
+            <div class="social-icon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <!-- X----- Closing a Social Icon -----X -->
+        </nav>
+        
+        <!-- X ----- Closing of Navigation MenuBar ------X -->
+        
+
+        <!-- ----- Creation of Main ----- -->
+        
+        <main>
+            
+            <!-- -----Creating Contact Information----- -->
+            
+            <div class="contact">
+                
+                <!-- -----Creating Contact Info----- -->
+                
+                <div class="contact-info">
+                    <section>
+                        <h2 style="font-size: 2rem;">Contact Me or Fill the Form</h2>
+                        <div class="contact-container">
+                            <br>
+                            <span>Email: contactme@gmail.com</span>
+                            <br><br>
+                            <span>Phone: 9880543775</span>
+                            <br><br>
+                            <span><i class="fab fa-facebook-f"></i><a href="#">&nbsp;&nbsp; Contact on Facebook</a></span>
+                            <br><br>
+                            <span><i class="fab fa-instagram"></i><a href="#">&nbsp;&nbsp;Contact on Instagram</a></span>
+                            <br><br>
+                        </div>
+                    </section>                    
+                </div>
+                
+                <!-- X-----Closing Contact Info-----X -->
+                
+
+                <!-- -----Creating Contact Form----- -->
+                
+                <div class="contact-form">
+                    <div class="contact-container-input">
+                        <form name="myForm" onsubmit="validateForm()">
+                            <input type="text" name="name" placeholder="Full Name">
+                            <br>
+                            <input type="text" name="email" placeholder="email@domainname.com">
+                            <br>
+                            <input type="number" name="phone" placeholder="9880543775">
+                            <br>
+                            <input type="text" name="message" placeholder="Type Your Message Here">
+                            <br>
+                            <input type="submit" name="submit" value="SUBMIT">
+
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- ---X--Closing Contact Form--X--- -->
+
+            </div>
+            <hr style="margin: 2rem 2rem 2rem 2rem;">
+            
+            <!-- ---X--Closing Contact Information--X--- -->
+            
+            <!-- -----Creation of Newsletter----- -->
+            
+            <div class="sub-newsletter">
+                <div class="information">
+                    <h1>Subscribe our Newsletter <br> 
+                    And <br> Get Latest Update</h1>
+                </div>
+                <form name="subscribe"  onsubmit="validateSubscribe()">
+                    <input type="text" name="fname"  placeholder="First Name">
+                    <input type="text" name="lname"  placeholder="Last Name"><br>
+                    <input type="text" name="email"  placeholder="Email@domainname.com"> <br>
+                    <input style="cursor: pointer;" type="submit" name="Subscribe" value="Subscribe">
+                </form>
+            </div>
+            
+            <hr style="margin: 2rem 2rem 2.5rem 2rem;">
+            
+            <!-- X-----Closing of Newsletter-----X -->
+        
+        </main> 
+        
+        <!-- X----- Closing of Main -----X -->
+
+        <!-- -----Creation of Footer----- -->
+
+        <footer>
+            <div class="footer-content" style="cursor: default;">
+                <span><h3 style="color: #fff;">&copy; 2021 All Rights Reserved</h3></span>
+            </div>
+        </footer>
+        
+        <!-- X-----Closing of Footer-----X -->      
+        
+        <!-- -----Internal Script----- -->
+        <script>
+			function validateForm() {
+				var name = document.forms["myForm"]["name"].value;
+				var email = document.forms["myForm"]["email"].value;
+				var phone = document.forms["myForm"]["phone"].value;
+				var message = document.forms["myForm"]["message"].value;
+
+				if (name == "" || email == "" || phone == "" || message == "" ){
+					alert("All of the Fields are Required. Try Again");
+				}
+				else {
+					alert("Thank you for the Message.");
+				}
+			}
+        </script>
+        <!-- X-----Internal Script-----X -->
+
+    </div>
+    
+    <!-- X-----Creating a Wrapper for Body-----X -->
+
+</body>
+</html>

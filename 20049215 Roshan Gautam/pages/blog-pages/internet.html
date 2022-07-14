@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet</title>
+
+    <!--        Linking Font Awesome Icons      -->
+    <link rel="stylesheet" href="../../css/all.css">
+        
+    <!--        Linking Custom Style        -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!--        Linking External JS      -->
+    <script src="../../js/script.js"></script>
+
+    <!-- -----Inline CSS----- -->
+    <style>
+        main{
+            margin: 1.5rem;
+        }
+
+        .blog-container{
+            margin: 1rem 2rem 0rem 2rem;
+            cursor: default;
+        }
+        
+        .blog-post{
+            width: 80%;
+            margin-top: 0rem;
+            margin: auto;
+            border: 2px solid #000;
+            padding: 2rem 2rem 0.4rem 2rem;
+        }
+        
+        section, .summary{
+            font-size: 1.2rem;
+        }
+        
+        .summary{
+            display: flex;
+            flex-direction: right;
+            margin-bottom: 1rem;
+        }
+
+        main ul{
+            list-style-type: none;
+        }
+
+        main span{
+            margin-left: 2.5rem;
+        }
+
+        main li, p, h3{
+            margin-top: 1rem;
+        }
+
+        .read-more{
+            padding: 0.2rem 2rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .read-more:hover{
+            color: #fff;
+            background-color: #000;
+        }
+
+        main ol, ul{
+            padding-left: 2rem;
+        }
+
+        .title:hover{
+            color: #00f;
+            text-decoration: underline;
+            
+        }
+
+        .title{
+            color: #000;
+            text-decoration: none;
+        }      
+        
+        .references a{
+            color: #0000ff;
+        }
+
+        .btn{
+            width: 7.5rem;
+            cursor: pointer;
+            padding: 0rem 0.4rem;
+        }
+
+        .btn:hover{
+            color: white;
+            background-color: #000;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- -----Creating a Wrapper for Body----- -->
+    
+    <div class="internet-wrapper">
+
+        <!-- ----- Creating a Navigation MenuBar ------ -->
+
+        <nav class="navigation">
+
+            <!-- -----Creating a Navigation Name ----- -->
+            <div class="portfolio-name">
+                <a href="../../index.html" style="text-decoration: none;"><h1>PORTFOLIO</h1></a>
+            </div>
+            <!-- X-----Closing a Navigation Name -----X -->
+
+            <!-- ----- Creating a Navigation Menu ----- -->
+            <div class="nav-menu">
+                <div class="nav-list">
+
+                    <a href="../../index.html" class="nav-name current">Home</a>   
+                    <a href="../cv.html" class="nav-name">CV</a> 
+                    <a href="#" class="nav-name">Blog</a>   
+                    <a href="../research.html" class="nav-name">Research</a>   
+                    <a href="../contact.html" class="nav-name" style="border-right: 2px solid #000;">Contact</a></li>
+                    
+                </div>
+            </div>
+            <!-- X----- Creating a Navigation Menu -----X -->
+
+            <!-- ----- Creating a Social Icon ----- -->
+            <div class="social-icon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <!-- X----- Closing a Social Icon -----X -->
+        </nav>
+        
+        <!-- X ----- Closing of Navigation MenuBar ------X -->
+        
+        <!-- -----Creating Main----- -->
+        
+        <h1><a href="../pages/blog.html" style="margin-left: 7rem;" class="title"><i class="fas fa-arrow-circle-left"></i>&nbsp;&nbsp;All Post</a></h1>
+       
+        <main>
+
+            <!-- -----Creating a Blog Content----- -->
+
+            <div class="blog-post">
+                <h1 style="text-align: center;">Basic Internet Technologies and It's Impact in our Daily Life</h1>
+                <div class="summary">
+                    <hr style="margin-left: 1rem;">
+                    <p style="margin-left: 2.5rem;"> The Internet is a connection of networks that uses the OSI Model and TCP/IP Model to transfer files or 
+                        data from one end of devices to another. There are 7 layers on OSI Model and 4 layers on TCP/IP layers 
+                        which have a similar function. The Internet has made a positive and negative impact on our life by making 
+                        our work easy to do, entertain us, and lazy too. Works that require a lot of time are made easy and 
+                        instant by using internet technology. From the purchase of goods to payment of the goods have been made online due to Internet Technologies. 
+                        Internet uses a different set of protocols to complete the given tasks such as HTTP, FTP, and telnet.</p>
+                </div>
+                <figure> <img style="margin-left: 8rem;" src="../../images/Article images/Article 2.jpg" alt="Internet Technologies"></figure>
+                <section>
+                    <p style="padding: 0rem 4rem;">
+                       <span>Internet</span> is a group of networks that consists of many local Area Networks that are connected. Internet is run by tens of thousands 
+                    of interconnected networks which are run by service providers, individual companies, universities, 
+                    governments, and others (Internet Society, 2018). OSI and TCP/IP model is used to transform data and 
+                    information from one computer to another connected on the Internet. TCP/IP protocol uses an entire suite 
+                    of protocols, in which Internet Protocol(IP) and Transport Control Protocol (TCP) are most important. (WEBSYDIAN, 2021)
+                    </p>
+                </section>
+                <button style="margin-left: 4rem; display: block; margin-top: 1.4rem;" class="btn" id="read-more" onclick="contentShow()" >Read More</button>
+                <section id="expand-more" style="display: none;">
+                    <h3>There are 7 Layers in the OSI Model:</h3>
+                    <ul>
+                        <li><b>Application Layer :</b></li><span> User interacts with this layer for web browsing and internet-connected application use application layer.</span> 
+                        <li><b>Presentation Layer :</b></li><span> The presentation layer is used for translating data from application formatting to network formatting and vice versa.</span>
+                        <li><b>Session Layer :</b></li><span>The session layer is used for establishing and terminating the connection between devices.</span> 
+                        <li><b>Transport Layer :</b></li><span> Transport Layer is one of the important layers that transfer data between system and host which is capable of error-checking and data recovery.</span>
+                        <li><b>Network Layer : </b></li><span> Network Layer determines the process of sending data to receiving devices by packet forwarding, routing, and addressing.</span>
+                        <li><b> Data Link Layer :</b></li><span> Data link layer covers binary into signals and also allows different layers to access media.</span>
+                        <li><b>Physical Layer :</b></li><span>Physical Layer is the actual hardware that transmits signals over medium.</span>
+                    </ul>
+                    <h3>TCP/IP Model uses 4 different layers which are: </h3>
+                    <ul>
+                        <li><b> Application Layer :</b></li><span>The application layer is called the Process layer which combines of Session layer, Presentation layer, and Application layer of the OSI Model.</span> 
+                        <li><b> Transport Layer :</b></li><span> The transport layer is called the host-to-host layer which has a similar function as the Transport Layer of the OSI Model.</span>
+                        <li><b> Internet Layer :</b></li><span> The transport layer is called the host-to-host layer which has a similar function as the Transport Layer of the OSI Model.</span>
+                        <li><b> Network Layer :</b></li><span> Network is called Network Interface layer which has a similar function as Data Link layer and Physical Layer.</span>
+                    </ul>
+                    (Alienor, 2018)
+                    <h3>Working Mechanism of Network Layer:</h3>
+                    <p><span>Suppose</span>  two users are using Skype so skype is a network-connected application that uses the application layer to send you videos or photos and messages using different protocols such as Telnet and File Transfer Protocol (FTP).
+                        <br><span>The</span>  presentation layer is responsible for translating received data into binary and compressing it with encryption. When the user gets your data, it is also responsible for decrypting it.
+                        <br><span> When</span> text files or image files are being downloaded then the Session layer is used in the arrangement of packets and establishes, maintains, and ends communication between devices.
+                        <br><span> Transport</span> Layer segments received data and ensure that the segment reaches the correct application by assigning a source, destination port number, and sequence number as well. The transport layer is also responsible for controlling the amount of data transmitted that can be handled by the receiver end devices and ensures that data is successfully transferred by checking for errors also.
+                        <br><span> The</span> network layer transmits each segment between devices in form of packets. This layer assigns source and destination IP addresses to each segment and determines the best paths for data transfer.
+                        <br><span>Data</span> Link layer adds sender and receiver MAC addresses to the data packet to form a frame and enables frames to be transported using Network Interface Card (NIC). This layer allows the network layer to access media and controls the placement of data and receive of data from media.
+                        <br><span>The</span> physical layer converts binary into signals and transmits them over local media depending upon the medium. They can be electrical, light, radio signals, etc.
+                        <br>(Alienor, 2018)
+                    </p>
+                    <h3>Some of the common Internet Protocols are TCP/IP protocol, HTTP (HyperText Transfer Protocol), and FTP (File Transfer Protocol).</h3>                    
+                    <ul>
+                        <li><b> TCP/IP: </b></li><span>TCP/IP protocol is that guarantees the arrival of any data transmission between two endpoints. It is also called peer-to-peer protocol as only two endpoints are connected.</span>
+                        <li><b> HTTP: </b></li><span> HTTP is a protocol that is used to transmit data present on World Wide Web (WWW) which includes text, multimedia, and graphics.</span>
+                        <li><b> FTP: </b></li><span> FTP is a protocol that is used during the transmission of files between computers connected by a TCP/IP network.</span>
+                    </ul>
+                    (Wikibooks, 2021)
+                    <h3>Impact of Internet on Daily Life</h3>
+                    <p><span>Internet</span> may seem something very simple, but it is one such powerful weapon with which one can do almost every activity. Nowadays, there is use the Internet for almost everything from communication to shopping, from reading news to ordering food, from education to booking tickets for movies. Internet is vastly used in every small as well as huge sectors. It has been an important part of our life. 
+                        Whether it's personal life or professional life, the Internet is used widely.
+                        <br><span>We</span> can take an example of the current situation. How are humans able to live in this pandemic? A simple answer- Internet. All the online classes, work from home, entertainment like movies, games are only possible because of the Internet. 
+                        <br><span>As</span> we all know everything comes with its pros and cons. But the Internet if used correctly can overcome the disadvantages. 
+                    </p>
+                    <h3>Positive Impact of Internet</h3>
+                    <ol>
+                        <li> Internet is a great platform for effective and fast communication through email and instant messaging service to any corner of the world. </li>
+                        <li>Internet banking has made human life less complicated. Banking transactions can be done staying at home. There is so need to go miles just to pay electricity bills, as that can be done staying home using the Internet. </li>
+                        <li>Nowadays, knowledge is not just limited to books, journals, and libraries. The Internet has made the education process effective. Students should not collect huge numbers of books and magazines for research, Internet has everything. Students can also attend online classes through the Internet. </li>
+                        <li>Online services like online shopping, ordering food have been possible due to the Internet. Just a click or two we get our order in front of our doors. </li>
+                        <li>Applications for jobs have also been easier. Most of the job vacancies are advertised online with online forms. Nowadays, even the interview can be done online. </li>
+                    </ol>
+                    <h3>Negative Impact of Internet</h3>
+                    <ol>
+                        <li>Internet has caused a lot of health problems. Due to the internet, people use their devices for a long period which causes eye problems, headache, backache, etc. </li>
+                        <li>People misuse the Internet for hacking, pornography, spreading hate, cyberbully, etc. </li>
+                        <li>Internet can be addictive without us realizing it. This is a common problem among young adults and teenagers which leads to lack of sleep.</li>
+                    </ol>
+                    <div class="conclusion">
+                        <p><span>The</span> Internet is a connection of networks that uses the OSI Model and TCP/IP Model to transfer files or data 
+                            from one end of devices to another. There are 7 layers on OSI Model and 4 layers on TCP/IP layers which 
+                            have a similar function. The Internet has made a positive and negative impact on our life by making our 
+                            work easy to do, entertain us, and lazy too. Works that require a lot of time are made easy and instant 
+                            by using internet technology. From the purchase of goods to payment of the goods have been made online due 
+                            to Internet Technologies. Internet uses a different set of protocols to complete the given tasks such as HTTP, FTP, and telnet.</p>
+                    </div>
+                    <div class="references">
+                        <h3>Reference</h3>
+                        <section>
+                            <ul>
+                                <li>Alienor, 2018. Network Layers Explained. [Online] <br>
+                                    Available at: <a href="https://www.plixer.com/blog/network-layers-explained/" target="_blank">https://www.plixer.com/blog/network-layers-explained/</a>
+                                    <br>[Accessed 28/11/2021].
+                                </li>
+                                <li>Internet Society, 2018. How it Works. [Online] <br>
+                                    Available at: <a href="https://www.internetsociety.org/internet/how-it-works/
+                                    " target="_blank">https://www.internetsociety.org/internet/how-it-works/
+                                    </a> 
+                                    <br>[Accessed 24/5/2021].
+                                </li>
+                                <li>WEBSYDIAN, 2021. Basic Internet Technology. [Online] <br>
+                                    Available at: <a href="https://www.websydian.com/olddoc/websydian_v60/knowledgebase/whitepapers/basicinternettechnology.htm#:~:text=They%20include%3A,e%2Dmail%20messages%20between%20hosts" target="_blank">https://www.websydian.com/olddoc/websydian_v60/knowledgebase/whitepapers/ <br> basicinternettechnology.htm#:~:text=They%20include%3A,e%2Dmail%20 <br> messages%20between%20hosts</a>
+                                    <br>[Accessed 24/5/2021].
+                                </li>
+                                <li>Wikibooks, 2021. Internet Technologies/Protocols. [Online] <br>
+                                    Available at: <a href="https://en.m.wikibooks.org/wiki/Internet_Technologies/Protocols" target="_blank">https://en.m.wikibooks.org/wiki/Internet_Technologies/Protocols</a>
+                                    <br>[Accessed 24/5/2021].
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                <button id="show-less" class="btn" style="margin-top: 1.4rem; display: none;" onclick="contentLess()">Read Less</button>
+            </div>
+
+            <!-- -----Closing a Blog Content ----- -->
+
+            <hr style="margin: 2rem 2rem 0.2rem 2rem;">
+
+            <!-- -----Creating a Comment Section----- -->
+
+            <hr style="margin: 2rem 2rem 0.2rem 2rem;">
+            <!-- X-----Creating a Comment Section-----X -->
+
+            <!-- -----Creation of Newsletter----- -->
+            
+            <div class="sub-newsletter">
+                <div class="information">
+                    <h1>Subscribe our Newsletter <br> 
+                    And <br> Get Latest Update</h1>
+                </div>
+                <form name="subscribe"  onsubmit="validateSubscribe()">
+                    <input type="text" name="fname"  placeholder="First Name">
+                    <input type="text" name="lname"  placeholder="Last Name"><br>
+                    <input type="text" name="email"  placeholder="Email@domainname.com"> <br>
+                    <input style="cursor: pointer;" type="submit" name="Subscribe" value="Subscribe">
+                </form>
+            </div>
+            <hr style="margin: 2rem 2rem 0.2rem 2rem;">
+            
+            <!-- X-----Closing of Newsletter-----X --> 
+            
+            
+        </main>        
+
+        <!-- X-----Closing Main-----X -->
+
+        <!-- -----Creating A Footer----- -->
+        <footer>
+            <div class="footer-content" style="cursor: default;">
+                <span><h3 style="color: #fff;">&copy; 2021 All Rights Reserved</h3></span>
+            </div>
+        </footer>
+
+        <!-- X-----Closing a Footer-----X -->
+    </div>
+    
+    <!-- X-----Closing a Wrapper for Body-----X -->
+
+    <!-- -----Internal JS ----- -->
+    
+    <script>
+        // Javascript Function to Expand more Content using diplay property
+        function contentShow(){
+            document.getElementById('read-more').style.display = "none";
+            document.getElementById('expand-more').style.display = "block";
+            document.getElementById('show-less').style.display = "block";
+        }
+
+        // Javascript Function to Show Less Content using diplay property
+        function contentLess(){
+            document.getElementById('show-less').style.display = "none";
+            document.getElementById('expand-more').style.display = "none";
+            document.getElementById('read-more').style.display = "block";
+        }
+
+    </script>
+    
+    <!-- X-----Internal JS -----X -->
+
+</body>
+</html>
